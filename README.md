@@ -11,9 +11,9 @@ flightAnalyzer.py is a flight analyzer script, which returns certain information
 
 The CSV file of ALL domestic flights in 2015 was taken from https://www.kaggle.com/usdot/flight-delays?select=flights.csv
 
-Since it would have taken around an hour to search and find information in the CSV provided by kaggle, I split it up using the provided csvSplitter.py. This CSV splitter script was specifically coded for this project, but it can be easily adjusted to accomodate for all CSV types.
+Since it would have taken around an hour to search and find information in the CSV given by kaggle, I split it up using the provided csvSplitter.py. This CSV splitter script was specifically coded for this project, but it can be easily adjusted to accomodate for all CSV types.
 
-The CSVs are split up by half months. This means that a file without a "_2" refers to the first half of a month (days 1-15). A file with a "_2" refers to the second half of a month (16-end of month). Splitting up the CSVs in this way allowed for extremely fast retrieval of flight information, no matter the day/month input. If i had left the original CSV with around 9m+ entries, it would have taken an hour or more to fetch a simple piece of information (I know this because the splitter script took around 1.5 hours to run)
+The CSVs are split up by half months. This means that a file without a "_2" refers to the first half of a month (days 1-15). A file with a "_2" refers to the second half of a month (16-end of month). Splitting up the CSVs in this way allowed for extremely fast retrieval of flight information, no matter the day/month input. If I had left the original CSV with around 9m+ entries, it would have taken an hour or more to fetch a simple piece of information (I know this because the splitter script took around 1.5 hours to run)
 
 Usage Information:
     - Make sure the latest version of Python is installed
